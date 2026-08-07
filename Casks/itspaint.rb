@@ -5,7 +5,7 @@ cask "itspaint" do
   url "https://github.com/joshlin2201/itspaint/releases/download/v#{version}/ItsPaint-#{version}.dmg"
   name "ItsPaint"
   desc "Paint editor for screenshots, sketches and pixel-precise edits"
-  homepage "https://github.com/joshlin2201/itspaint"
+  homepage "https://itspaintmac.com/"
 
   livecheck do
     url :url
