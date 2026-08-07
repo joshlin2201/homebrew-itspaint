@@ -7,15 +7,9 @@ cask "itspaint" do
   desc "Paint editor for screenshots, sketches and pixel-precise edits"
   homepage "https://github.com/joshlin2201/itspaint"
 
-  # Tags, not releases. Every 0.x build is published as a GitHub pre-release,
-  # and both release strategies discard those outright — github_releases.rb does
-  # `next if release["draft"] || release["prerelease"]`, so it matches nothing
-  # and livecheck reports "Unable to get versions". Tags carry no such flag, and
-  # a draft release pushes no tag, so drafts are excluded for free.
   livecheck do
-    url "https://github.com/joshlin2201/itspaint.git"
-    strategy :git
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
+    url :url
+    strategy :github_latest
   end
 
   depends_on macos: :sonoma
