@@ -1,6 +1,6 @@
 cask "itspaint" do
-  version "0.16.0"
-  sha256 "9a40d1c23efc1eb06027545c31d6c88dd507a0dece8398a738705e3615143d29"
+  version "0.16.1"
+  sha256 "f69d2402347a68638dd4aba5bf4d3fd562908f70b9cea7c2b630d44e82b95983"
 
   url "https://github.com/joshlin2201/itspaint/releases/download/v#{version}/ItsPaint-#{version}.dmg"
   name "ItsPaint"
